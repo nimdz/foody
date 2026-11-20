@@ -1,0 +1,5 @@
+package com.freshsupply.fms.dto;
+
+import jakarta.validation.constraints.Min;
+
+public record RestockRequest(@Min(1) int quantity) { }
